@@ -106,12 +106,12 @@ for(;;)
 	
 	}
 
-	std::cout << MyCalculator.add() <<std::endl 
-		      << MyCalculator.multiply() << std::endl 
-			  << MyCalculator.subtract_1_2() << std::endl 
-			  << MyCalculator.subtract_2_1() << std::endl
-			  << MyCalculator.divide_1_2() << std::endl
-			  <<MyCalculator.divide_2_1() << std::endl;
+	std::cout	<< "num1 + num2 = " << MyCalculator.add() << std::endl
+				<< "num1 - num2 = " << MyCalculator.multiply() << std::endl
+				<< "num2 - num1 = " << MyCalculator.subtract_1_2() << std::endl
+				<< "num1 * num2 = " << MyCalculator.subtract_2_1() << std::endl
+				<< "num1 / num2 = " << MyCalculator.divide_1_2() << std::endl
+				<< "num2 / num1 = " << MyCalculator.divide_2_1() << std::endl;
 }
 
 	
