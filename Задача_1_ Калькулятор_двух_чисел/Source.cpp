@@ -7,13 +7,12 @@
 
 class Calculator
 {
-public:
-	
+		
 	double num1;
 	double num2;
 
-	Calculator ()
-{}
+public:
+Calculator (){}
 
 	double add() //метод должен возвращать результат сложения num1 и num2
 	{
