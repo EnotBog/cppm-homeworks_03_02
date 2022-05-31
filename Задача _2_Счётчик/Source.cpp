@@ -8,14 +8,15 @@
 class Counter 
 {
 public:
-	int counter;
-	Counter() {}
-
+Counter() { this->counter = 0; }
+    void set_counter(int x) { counter = x; }
 	void up_counter()    { counter++;}
 	void down_counter()  { counter--;}
 	void print_counter() { std::cout << counter << std::endl; }
-private:
 
+private:
+	int counter;
+	
 
 		
 };
@@ -24,7 +25,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	system("chcp 1251");
-
+	int buf_int;
 	std::string yes = "да"; 
 	std::string no = "нет";
 	std::string stop = "х";
@@ -37,10 +38,11 @@ int main()
 	Counter counter1;
 
 	std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";std::cin >> buff_console; 
-	if (buff_console == yes) { std::cout << "Введите начальное значение счётчика: " << std::endl; std::cin >> counter1.counter; 
+	if (buff_console == yes) {
+		std::cout << "Введите начальное значение счётчика: " << std::endl; std::cin >> buf_int; 
+		counter1.set_counter(buf_int);
 	}
-	else 
-	{ counter1.counter = 0; }
+
 
 	while (true)
 	{
